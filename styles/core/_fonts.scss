@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Galano Grotesque Medium';
+    src: url('../fonts/galano-grotesque/galano-grotesque-medium.woff2') format('woff2'),
+    url('../fonts/galano-grotesque/galano-grotesque-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Canela Regular';
+    src: url('../fonts/canela/canela-regular.woff2') format('woff2'),
+    url('../fonts/canela/canela-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Canela Regular Italic';
+    src: url('../fonts/canela/canela-regular-italic.woff2') format('woff2'),
+    url('../fonts/canela/canela-regular-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$base-font: 'Galano Grotesque Medium', Arial, Lucida, sans-serif;
+$secondary-font: 'Canela Regular', Arial, Lucida, sans-serif;
+$secondary-italic-font: 'Canela Regular Italic', Arial, Lucida, sans-serif;

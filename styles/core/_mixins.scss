@@ -1,0 +1,23 @@
+/* Mixin for custom scroll bar:
+
+Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
+
+*/
+
+@mixin custom_scroll($color_track, $color_scroll, $color_thumb, $opacity, $width) {
+    -ms-scrollbar-base-color: $color_thumb;
+    scrollbar-color: rgba($color_thumb, .5) $color_scroll;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+        background-color: $color_track;
+        width: $width;
+    }
+    &::-webkit-scrollbar {
+        width: $width;
+        background-color: $color_track;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($color_thumb, $opacity);
+    }
+}

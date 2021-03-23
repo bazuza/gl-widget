@@ -1,0 +1,51 @@
+.glb-widget {
+    &__menu {
+        a {
+            text-decoration: none;
+            transition: .3s ease;
+            font-size: 17px;
+            line-height: 1.5;
+            min-height: 50px;
+            color: $color-1;
+            display: flex;
+            align-items: center;
+            padding: 17px 30px 17px 0;
+            border-bottom: 1px solid $color-4;
+            position: relative;
+            &:last-child {
+                border-color: transparent;
+            }
+            &:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: block;
+                border-top: 2px solid $color-1;
+                border-right: 2px solid $color-1;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -4px;
+                transform: rotate(45deg);
+                transition: .3s ease;
+            }
+            &:hover {
+                color: #000;
+                &:after {
+                    margin-right: -5px;
+                }
+            }
+        }
+        .glbw__icon-map {
+            min-width: 56px;
+            margin-right: 12px;
+        }
+    }
+}
+.glbwm-sub {
+    display: block;
+    color: $color-3;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 3px;
+}
