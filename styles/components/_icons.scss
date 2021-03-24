@@ -1,0 +1,72 @@
+[class*='glbw__icon'] {
+    text-indent: -99999px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border: 0;
+}
+.glbw {
+    &__icon-menu {
+        width: 12px;
+        height: 10px;
+        position: relative;
+        cursor: pointer;
+        &:before, &:after {
+            content: '';
+        }
+        &:before, &:after, span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            display: block;
+            left: 0;
+            background-color: #fff;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
+        span {
+            top: 4px
+        }
+    }
+    &__icon-user {
+        cursor: pointer;
+        width: 19px;
+        height: 19px;
+        background-image: url(../img/icons/user.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__icon-cart {
+        cursor: pointer;
+        width: 19px;
+        height: 17px;
+        background-image: url(../img/icons/cart.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__icon-map {
+        width: 56px;
+        height: 56px;
+        background-image: url(../img/icons/map.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__icon-remove {
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icons/remove.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__icons-group {
+        display: inline-flex;
+        align-items: center;
+        [class*='glbw__icon'] {
+            margin-left: 20px;
+        }
+    }
+}

@@ -74,6 +74,74 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   line-height: 15px;
   margin-top: 3px; }
 
+[class*='glbw__icon'] {
+  text-indent: -99999px;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  border: 0; }
+
+.glbw__icon-menu {
+  width: 12px;
+  height: 10px;
+  position: relative;
+  cursor: pointer; }
+  .glbw__icon-menu:before, .glbw__icon-menu:after {
+    content: ''; }
+  .glbw__icon-menu:before, .glbw__icon-menu:after, .glbw__icon-menu span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    left: 0;
+    background-color: #fff; }
+  .glbw__icon-menu:before {
+    top: 0; }
+  .glbw__icon-menu:after {
+    bottom: 0; }
+  .glbw__icon-menu span {
+    top: 4px; }
+
+.glbw__icon-user {
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icons/user.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.glbw__icon-cart {
+  cursor: pointer;
+  width: 19px;
+  height: 17px;
+  background-image: url(../img/icons/cart.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.glbw__icon-map {
+  width: 56px;
+  height: 56px;
+  background-image: url(../img/icons/map.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.glbw__icon-remove {
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icons/remove.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.glbw__icons-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .glbw__icons-group [class*='glbw__icon'] {
+    margin-left: 20px; }
+
 .glbw-btn {
   display: inline-block;
   background-color: #000;
@@ -111,7 +179,7 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   .glbwf__row input[type=email],
   .glbwf__row input[type=password] {
     height: 30px;
-    padding: 0 10px;
+    padding: 0 10px 5px;
     font-size: 12px;
     background-color: #fff;
     border: 1px solid #CED4DA;
@@ -384,73 +452,5 @@ body {
       transition: .3s ease; }
     .glb-widget__back:hover:before {
       margin-left: -5px; }
-
-[class*='glbw__icon'] {
-  text-indent: -99999px;
-  text-decoration: none;
-  outline: none;
-  display: inline-block;
-  border: 0; }
-
-.glbw__icon-menu {
-  width: 12px;
-  height: 10px;
-  position: relative;
-  cursor: pointer; }
-  .glbw__icon-menu:before, .glbw__icon-menu:after {
-    content: ''; }
-  .glbw__icon-menu:before, .glbw__icon-menu:after, .glbw__icon-menu span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    display: block;
-    left: 0;
-    background-color: #fff; }
-  .glbw__icon-menu:before {
-    top: 0; }
-  .glbw__icon-menu:after {
-    bottom: 0; }
-  .glbw__icon-menu span {
-    top: 4px; }
-
-.glbw__icon-user {
-  cursor: pointer;
-  width: 19px;
-  height: 19px;
-  background-image: url(../img/icons/user.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.glbw__icon-cart {
-  cursor: pointer;
-  width: 19px;
-  height: 17px;
-  background-image: url(../img/icons/cart.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.glbw__icon-map {
-  width: 56px;
-  height: 56px;
-  background-image: url(../img/icons/map.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.glbw__icon-remove {
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/icons/remove.svg);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.glbw__icons-group {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .glbw__icons-group [class*='glbw__icon'] {
-    margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
