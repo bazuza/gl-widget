@@ -10,6 +10,8 @@ body {
     min-height: 300px;
     height: 100vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     @include custom_scroll(white, white, #000, .7, 7px);
     * {
         box-sizing: border-box;
@@ -30,6 +32,9 @@ body {
     }
     &__content {
         padding: 6vw 6vw 30px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
         transition: .3s ease;
     }
     &__title {
@@ -87,6 +92,7 @@ body {
     text-decoration: none;
     outline: none;
     display: inline-block;
+    border: 0;
 }
 .glbw {
     &__icon-menu {

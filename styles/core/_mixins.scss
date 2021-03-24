@@ -21,3 +21,10 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
         background-color: rgba($color_thumb, $opacity);
     }
 }
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}

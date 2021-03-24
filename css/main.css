@@ -100,6 +100,46 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
     .glbw-btn.--alt:hover {
       background-color: #E9BDBD; }
 
+.glb-widget__form {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.glbwf__row {
+  margin-bottom: 20px; }
+  .glbwf__row input[type=text],
+  .glbwf__row input[type=email],
+  .glbwf__row input[type=password] {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    color: #000;
+    font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif;
+    width: 100%; }
+    .glbwf__row input[type=text]::-webkit-input-placeholder,
+    .glbwf__row input[type=email]::-webkit-input-placeholder,
+    .glbwf__row input[type=password]::-webkit-input-placeholder {
+      color: rgba(99, 102, 111, 0.5) !important;
+      font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
+    .glbwf__row input[type=text]:-moz-placeholder,
+    .glbwf__row input[type=email]:-moz-placeholder,
+    .glbwf__row input[type=password]:-moz-placeholder {
+      color: rgba(99, 102, 111, 0.5) !important;
+      font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
+    .glbwf__row input[type=text]::-moz-placeholder,
+    .glbwf__row input[type=email]::-moz-placeholder,
+    .glbwf__row input[type=password]::-moz-placeholder {
+      color: rgba(99, 102, 111, 0.5) !important;
+      font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
+    .glbwf__row input[type=text]:-ms-input-placeholder,
+    .glbwf__row input[type=email]:-ms-input-placeholder,
+    .glbwf__row input[type=password]:-ms-input-placeholder {
+      color: rgba(99, 102, 111, 0.5) !important;
+      font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
+
 .glb-widget__detail > p {
   margin: 0 0 15px;
   font-size: 14px;
@@ -244,6 +284,13 @@ body {
   min-height: 300px;
   height: 100vh;
   overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-scrollbar-base-color: #000;
   scrollbar-color: rgba(0, 0, 0, 0.5) white;
   scrollbar-width: thin; }
@@ -279,6 +326,16 @@ body {
     background-position: center; }
   .glb-widget__content {
     padding: 6vw 6vw 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     -webkit-transition: .3s ease;
     transition: .3s ease; }
   .glb-widget__title {
@@ -332,7 +389,8 @@ body {
   text-indent: -99999px;
   text-decoration: none;
   outline: none;
-  display: inline-block; }
+  display: inline-block;
+  border: 0; }
 
 .glbw__icon-menu {
   width: 12px;

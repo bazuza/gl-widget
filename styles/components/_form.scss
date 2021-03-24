@@ -1,0 +1,29 @@
+.glb-widget {
+    &__form {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.glbwf {
+    &__row {
+        margin-bottom: 20px;
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            height: 30px;
+            padding: 0 10px;
+            font-size: 12px;
+            background-color: #fff;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            color: #000;
+            font-family: $base-font;
+            width: 100%;
+            @include placeholder {
+                color: rgba(#63666F, .5) !important;
+                font-family: $base-font;
+            }
+        }
+    }
+}
