@@ -62,6 +62,13 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    &__icon-info {
+        width: 13px;
+        height: 13px;
+        background-image: url(../img/icons/info.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     &__icons-group {
         display: inline-flex;
         align-items: center;

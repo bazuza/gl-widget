@@ -1,0 +1,74 @@
+.glb-widget {
+    &__review {
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 0;
+            color: #000;
+            font-size: 14px;
+            th {
+                font-weight: normal;
+                text-transform: uppercase;
+                text-align: left;
+                padding: 10px 0 15px;
+                vertical-align: middle;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+            td {
+                padding: 10px 0;
+                border-bottom: 1px solid $color-5;
+                vertical-align: middle;
+                &:last-child {
+                    text-align: right;
+                }
+                &.t-sub {
+                    padding-left: 20px;
+                    padding-top: 0;
+                    + td {
+                        padding-top: 0;
+                    }
+                }
+            }
+            a {
+                color: $color-8;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.t-order {
+                td {
+                    border: 0;
+                }
+            }
+            .t-sub {
+                color: $color-6;
+                font-size: 12px;
+                display: block;
+                line-height: 1;
+                margin-top: 3px;
+            }
+            .t-subtotal {
+                td {
+                    border-top: 1px solid $color-5;
+                    padding-top: 5px;
+                    padding-bottom: 3px;
+                }
+            }
+            .t-subtotal, .t-tax {
+                color: $color-6;
+            }
+            .t-tax, .t-total {
+                td {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+            }
+            .glbw__icon-info {
+                margin-right: 5px;
+            }
+        }
+    }
+}
