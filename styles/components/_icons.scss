@@ -69,6 +69,26 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    &__icon-complete {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $color-1;
+        position: relative;
+        &:before {
+            content: '';
+            background-image: url(../img/icons/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 24px;
+            height: 18px;
+            display: block;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+    }
     &__icons-group {
         display: inline-flex;
         align-items: center;

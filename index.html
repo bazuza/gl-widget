@@ -285,6 +285,91 @@
         </div>
     </div>
 
+    <!-- Payment info -->
+    <div class="glb-widget__content">
+        <div class="glb-widget__title">
+            <span class="glb-widget__back" role="button">Back</span>
+            <h2>Payment <i>info</i></h2>
+        </div>
+        <div class="glb-widget__payment">
+            <form class="glbwp__form">
+                <div class="glbwf__row">
+                    <label>Cardholder Name</label>
+                    <input type="text" value="" placeholder="name on Card"/>
+                </div>
+                <div class="glbwf__row">
+                    <label>Credit Card Number</label>
+                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" value="" placeholder="Card number"/>
+                </div>
+                <div class="glbwf__rows">
+                    <div class="glbwf__row">
+                        <label>Expiration</label>
+                        <input type="number" maxlength="2" value="" placeholder="Month"/>
+                    </div>
+                    <div class="glbwf__row">
+                        <input type="number" maxlength="4" value="" placeholder="Year"/>
+                    </div>
+                    <div class="glbwf__row">
+                        <label>CVC</label>
+                        <input type="tel" pattern="\d*" maxlength="3" value="" placeholder="123"/>
+                    </div>
+                </div>
+                <div class="glbwf__rows">
+                    <div class="glbwf__row">
+                        <label>Billing Zip</label>
+                        <input type="number" value="" placeholder="zip code"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="glbwd__cta --next">
+            <a href="#" class="glbw-btn">Next</a>
+        </div>
+    </div>
+
+    <!-- We look forward to getting you GLOSSED! -->
+    <div class="glb-widget__content">
+        <div class="glb-widget__title">
+            <span class="glb-widget__back" role="button">Back</span>
+            <h2><i>We look forward to getting<br> you GLOSSED!</i></h2>
+        </div>
+        <div class="glb-widget__complete">
+            <div class="glbw__icon-complete"></div>
+            <div class="glbwco__confirm">
+                You`ll receive a confirmation email<br>
+                at mailemail@gmail.com
+            </div>
+            <div class="glb-widget__review">
+                <table class="t-order">
+                    <tfoot>
+                    <tr class="t-subtotal">
+                        <td>Subtotal:</td>
+                        <td><i class="glbw__icon-info"></i><s>$100</s></td>
+                    </tr>
+                    <tr class="t-tax">
+                        <td>Tax:</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr class="t-total">
+                        <td>Total:</td>
+                        <td>$0</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="glbwco__thank">Thank you for choosing Glosslab</div>
+            <div class="glbwco__note">if you need anything else, feel free to contact us.</div>
+            <div class="glbwco__contact">
+                Glosslab - West Village<br>
+                <a href="tel:(212) 651-9151">(212) 651-9151</a><br>
+                <a href="mailto:info@glosslab.com">info@glosslab.com</a>
+            </div>
+        </div>
+        <div class="glbwd__cta --next">
+            <a href="#" class="glbw-btn">Next</a>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

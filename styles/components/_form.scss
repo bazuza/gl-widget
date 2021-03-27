@@ -10,7 +10,9 @@
         margin-bottom: 20px;
         input[type=text],
         input[type=email],
-        input[type=password] {
+        input[type=password],
+        input[type=number],
+        input[type=tel] {
             height: 30px;
             padding: 0 10px 5px;
             font-size: 12px;
@@ -24,6 +26,23 @@
                 color: rgba(#63666F, .5) !important;
                 font-family: $base-font;
             }
+        }
+        label {
+            font-size: 14px;
+            color: #000;
+            display: block;
+            padding-bottom: 3px;
+        }
+    }
+    &__rows {
+        display: flex;
+        align-items: flex-end;
+        margin-left: -6px;
+        margin-right: -6px;
+        .glbwf__row {
+            flex-basis: calc(33.333% - 12px);
+            margin-left: 6px;
+            margin-right: 6px;
         }
     }
 }
