@@ -85,6 +85,33 @@
                 }
             }
         }
+        input[type=radio] {
+            display: none;
+            + label {
+                &:before {
+                    border-radius: 50%;
+                }
+                &:after {
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    background-color: $color-1;
+                    border-radius: 50%;
+                    right: 3px;
+                    top: 4px;
+                }
+            }
+            &:checked {
+                + label {
+                    &:before {
+                        background-color: #fff;
+                    }
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
     &__cta {
         padding-top: 30px;

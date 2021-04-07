@@ -206,7 +206,8 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   .glbwf__row input[type=email],
   .glbwf__row input[type=password],
   .glbwf__row input[type=number],
-  .glbwf__row input[type=tel] {
+  .glbwf__row input[type=tel],
+  .glbwf__row textarea {
     height: 30px;
     padding: 0 10px 5px;
     font-size: 12px;
@@ -220,30 +221,37 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
     .glbwf__row input[type=email]::-webkit-input-placeholder,
     .glbwf__row input[type=password]::-webkit-input-placeholder,
     .glbwf__row input[type=number]::-webkit-input-placeholder,
-    .glbwf__row input[type=tel]::-webkit-input-placeholder {
+    .glbwf__row input[type=tel]::-webkit-input-placeholder,
+    .glbwf__row textarea::-webkit-input-placeholder {
       color: rgba(99, 102, 111, 0.5) !important;
       font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
     .glbwf__row input[type=text]:-moz-placeholder,
     .glbwf__row input[type=email]:-moz-placeholder,
     .glbwf__row input[type=password]:-moz-placeholder,
     .glbwf__row input[type=number]:-moz-placeholder,
-    .glbwf__row input[type=tel]:-moz-placeholder {
+    .glbwf__row input[type=tel]:-moz-placeholder,
+    .glbwf__row textarea:-moz-placeholder {
       color: rgba(99, 102, 111, 0.5) !important;
       font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
     .glbwf__row input[type=text]::-moz-placeholder,
     .glbwf__row input[type=email]::-moz-placeholder,
     .glbwf__row input[type=password]::-moz-placeholder,
     .glbwf__row input[type=number]::-moz-placeholder,
-    .glbwf__row input[type=tel]::-moz-placeholder {
+    .glbwf__row input[type=tel]::-moz-placeholder,
+    .glbwf__row textarea::-moz-placeholder {
       color: rgba(99, 102, 111, 0.5) !important;
       font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
     .glbwf__row input[type=text]:-ms-input-placeholder,
     .glbwf__row input[type=email]:-ms-input-placeholder,
     .glbwf__row input[type=password]:-ms-input-placeholder,
     .glbwf__row input[type=number]:-ms-input-placeholder,
-    .glbwf__row input[type=tel]:-ms-input-placeholder {
+    .glbwf__row input[type=tel]:-ms-input-placeholder,
+    .glbwf__row textarea:-ms-input-placeholder {
       color: rgba(99, 102, 111, 0.5) !important;
       font-family: "Galano Grotesque Medium", Arial, Lucida, sans-serif; }
+  .glbwf__row textarea {
+    height: auto;
+    min-height: 100px; }
   .glbwf__row label {
     font-size: 14px;
     color: #000;
@@ -338,6 +346,22 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
     .glbwd__addons input[type=checkbox]:checked + label:before {
       background-color: #E9BDBD; }
     .glbwd__addons input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+  .glbwd__addons input[type=radio] {
+    display: none; }
+    .glbwd__addons input[type=radio] + label:before {
+      border-radius: 50%; }
+    .glbwd__addons input[type=radio] + label:after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #E9BDBD;
+      border-radius: 50%;
+      right: 3px;
+      top: 4px; }
+    .glbwd__addons input[type=radio]:checked + label:before {
+      background-color: #fff; }
+    .glbwd__addons input[type=radio]:checked + label:after {
       opacity: 1; }
 
 .glbwd__cta {
@@ -582,6 +606,32 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   .glbwco__contact a {
     text-decoration: none;
     color: #E9BDBD; }
+
+.glbwm__title {
+  text-transform: uppercase;
+  color: #E9BDBD;
+  font-size: 12px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  letter-spacing: 0.1em; }
+  .glbwm__title + .glbwm__note {
+    margin-top: -25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D5D5D5; }
+
+.glbwm__sub {
+  font-size: 14px;
+  margin-bottom: 30px; }
+
+.glbwm__note {
+  font-size: 12px;
+  color: #63666F;
+  line-height: 15px;
+  margin-bottom: 50px; }
+  .glbwm__note p {
+    margin-top: 0; }
+    .glbwm__note p:not(:last-child) {
+      margin-bottom: 20px; }
 
 body {
   margin: 0;
