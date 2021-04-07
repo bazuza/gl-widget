@@ -339,7 +339,7 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
       -webkit-transition: .3s ease;
       transition: .3s ease; }
     .glbwd__addons label:after {
-      content: '+';
+      content: '\002B';
       color: #fff;
       font-size: 27px;
       position: absolute;
@@ -738,14 +738,20 @@ body {
     -ms-flex-align: center;
     align-items: center;
     background-color: #E9BDBD;
-    padding: 27px 25px; }
+    padding: 27px 25px;
+    height: 77px;
+    position: relative; }
   .glb-widget__logo {
     width: 125px;
     height: 23px;
     background-image: url(../img/logo-1.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 33px; }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .glb-widget__content {
     padding: 6vw 6vw 30px;
     display: -webkit-box;
@@ -849,7 +855,10 @@ body {
     cursor: pointer; }
     .glb-widget__back + h2 {
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
     .glb-widget__back:before {
       content: '';
       width: 8px;

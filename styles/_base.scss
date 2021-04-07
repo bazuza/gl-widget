@@ -24,6 +24,8 @@ body {
         align-items: center;
         background-color: $color-1;
         padding: 27px 25px;
+        height: 77px;
+        position: relative;
     }
     &__logo {
         width: 125px;
@@ -31,7 +33,10 @@ body {
         background-image: url(../img/logo-1.svg);
         background-repeat: no-repeat;
         background-position: center;
-        margin-left: 33px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     &__content {
         padding: 6vw 6vw 30px;
@@ -129,6 +134,7 @@ body {
         + h2 {
             width: 100%;
             text-align: center;
+            flex-grow: 1;
         }
         &:before {
             content: '';
