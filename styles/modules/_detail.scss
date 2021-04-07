@@ -65,13 +65,17 @@
                 transition: .3s ease;
             }
             &:after {
-                content: '\002B';
+                content: '';
+                background-image: url(../img/icons/plus.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
                 color: #fff;
+                width: 14px;
+                height: 14px;
                 font-size: 27px;
                 position: absolute;
-                right: 4px;
-                top: 7px;
-                line-height: 0;
+                right: 5px;
+                top: 6px;
                 opacity: 0;
                 transition: .3s ease;
             }
@@ -102,6 +106,7 @@
                     content: '';
                     width: 18px;
                     height: 18px;
+                    background-image: none;
                     background-color: $color-1;
                     border-radius: 50%;
                     right: 3px;

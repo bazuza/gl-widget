@@ -339,13 +339,17 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
       -webkit-transition: .3s ease;
       transition: .3s ease; }
     .glbwd__addons label:after {
-      content: '\002B';
+      content: '';
+      background-image: url(../img/icons/plus.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
       color: #fff;
+      width: 14px;
+      height: 14px;
       font-size: 27px;
       position: absolute;
-      right: 4px;
-      top: 7px;
-      line-height: 0;
+      right: 5px;
+      top: 6px;
       opacity: 0;
       -webkit-transition: .3s ease;
       transition: .3s ease; }
@@ -365,6 +369,7 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
       content: '';
       width: 18px;
       height: 18px;
+      background-image: none;
       background-color: #E9BDBD;
       border-radius: 50%;
       right: 3px;
