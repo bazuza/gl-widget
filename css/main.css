@@ -110,6 +110,14 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   background-repeat: no-repeat;
   background-position: center; }
 
+.glbw__icon-location {
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icons/location.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .glbw__icon-cart {
   cursor: pointer;
   width: 19px;
