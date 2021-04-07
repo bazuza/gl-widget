@@ -56,6 +56,29 @@ body {
             font-family: $secondary-italic-font;
             font-style: normal;
         }
+        &.--alt {
+            font-size: 20px;
+            h2 {
+                text-align: left;
+            }
+        }
+    }
+    &__sub {
+        font-size: 40px;
+        line-height: 48px;
+        font-family: $secondary-font;
+        margin-bottom: 30px;
+        color: $color-2;
+        display: flex;
+        align-items: center;
+        h2, h3, h4 {
+            font: inherit;
+            margin: 0;
+        }
+        i {
+            font-family: $secondary-italic-font;
+            font-style: normal;
+        }
     }
     &__note {
         text-align: center;
@@ -79,6 +102,18 @@ body {
         }
         .glb-widget__title {
             text-align: center;
+        }
+        &--complex {
+            color: #000;
+            font-size: 14px;
+            line-height: 19px;
+            padding-top: 30px;
+            p {
+                margin-top: 0;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
     &__back {

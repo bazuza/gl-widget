@@ -10,6 +10,54 @@
     &__list {
         display: flex;
         align-items: center;
+        position: relative;
+        padding-right: 60px;
+        padding-left: 60px;
+        &--btn {
+            width: 35px;
+            min-width: 35px;
+            height: 35px;
+            text-indent: -99999px;
+            font-size: 0;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            border: 0;
+            padding: 0;
+            background: none;
+            transition: .3s ease;
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                left: 15px;
+                top: 12px;
+                display: block;
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                transform: rotate(-45deg);
+                transition: .3s ease;
+            }
+            &.disabled {
+                opacity: .5;
+                pointer-events: none;
+            }
+            &.--prev {
+                left: 5px;
+                &:hover {
+                    transform: translateX(-7px);
+                }
+            }
+            &.--next {
+                right: 5px;
+                transform: scaleX(-1);
+                &:hover {
+                    transform: scaleX(-1) translateX(-7px);
+                }
+            }
+        }
     }
     &__item {
         text-align: center;
