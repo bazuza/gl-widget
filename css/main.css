@@ -314,9 +314,12 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
       color: #55595C; }
   .glbwd__addons .a-row {
     padding: 17px 0;
-    border-bottom: 1px solid #E5E5E5; }
+    border-bottom: 1px solid #E5E5E5;
+    position: relative; }
     .glbwd__addons .a-row:last-of-type {
       border: 0; }
+  .glbwd__addons .glbwf__row {
+    margin-bottom: 0; }
   .glbwd__addons.--alt .a-row:first-child {
     border-top: 1px solid #E5E5E5; }
   .glbwd__addons label {
@@ -378,6 +381,23 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
       background-color: #fff; }
     .glbwd__addons input[type=radio]:checked + label:after {
       opacity: 1; }
+  .glbwd__addons .add-field ~ label {
+    padding-right: 130px; }
+    .glbwd__addons .add-field ~ label:before {
+      right: 140px; }
+    .glbwd__addons .add-field ~ label:after {
+      right: 143px !important; }
+  .glbwd__addons .add-field {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 100px; }
+    .glbwd__addons .add-field input {
+      padding-left: 25px; }
+    .glbwd__addons .add-field .value-label {
+      position: absolute;
+      left: 10px;
+      top: 1px; }
 
 .glbwd__cta {
   padding-top: 30px;
