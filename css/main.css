@@ -391,7 +391,8 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
     position: absolute;
     right: 0;
     top: 12px;
-    width: 100px; }
+    width: 100px;
+    z-index: 1; }
     .glbwd__addons .add-field input {
       padding-left: 25px; }
     .glbwd__addons .add-field .value-label {
