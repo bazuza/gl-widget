@@ -662,6 +662,31 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
     padding-bottom: 20px;
     border-bottom: 1px solid #E5E5E5; }
 
+.glb-widget__complete .gwc-content {
+  font-size: 14px;
+  margin-bottom: 55px;
+  color: #000; }
+  @media (min-width: 1024px) {
+    .glb-widget__complete .gwc-content {
+      margin-left: -2.0833333333333335vw;
+      margin-right: -2.0833333333333335vw; } }
+  .glb-widget__complete .gwc-content strong, .glb-widget__complete .gwc-content b {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0;
+    line-height: normal; }
+  .glb-widget__complete .gwc-content p {
+    margin: 0;
+    line-height: 19px; }
+  .glb-widget__complete .gwc-content a {
+    text-decoration: none;
+    color: #060606; }
+    .glb-widget__complete .gwc-content a:hover {
+      color: #1F8BFF; }
+
+.glb-widget__complete .gwc-item:not(:last-child) {
+  margin-bottom: 20px; }
+
 .glbwco__confirm {
   text-align: center;
   font-size: 14px;
@@ -689,6 +714,24 @@ Example: @include custom_scroll(white, white, $clr-link, 0.5, 10px);
   .glbwco__contact a {
     text-decoration: none;
     color: #E9BDBD; }
+
+.glb-widget__title.--size-22 {
+  text-align: center;
+  font-size: 22px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 30px; }
+  @media (min-width: 1024px) {
+    .glb-widget__title.--size-22 {
+      margin-left: -10px;
+      margin-right: -10px; } }
+  .glb-widget__title.--size-22 .glbw__icon-complete {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: -10px; }
 
 .glbwm__title {
   text-transform: uppercase;

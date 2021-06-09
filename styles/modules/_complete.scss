@@ -16,6 +16,37 @@
                 }
             }
         }
+        .gwc-content {
+            font-size: 14px;
+            margin-bottom: 55px;
+            color: #000;
+            @media (min-width: 1024px) {
+                margin-left: -2.0833333333333335vw;
+                margin-right: -2.0833333333333335vw;
+            }
+            strong, b {
+                font-weight: 700;
+                display: block;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+            p {
+                margin: 0;
+                line-height: 19px;
+            }
+            a {
+                text-decoration: none;
+                color: #060606;
+                &:hover {
+                    color: #1F8BFF;
+                }
+            }
+        }
+        .gwc-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 .glbwco {
@@ -46,6 +77,27 @@
         a {
             text-decoration: none;
             color: $color-1;
+        }
+    }
+}
+.glb-widget{
+    &__title {
+        &.--size-22 {
+            text-align: center;
+            font-size: 22px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            @media (min-width: 1024px) {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            .glbw__icon-complete {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                margin-top: -10px;
+            }
         }
     }
 }
